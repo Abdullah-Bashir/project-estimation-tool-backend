@@ -16,7 +16,7 @@ const projectDetailSchema = new mongoose.Schema(
             totalHours: { type: Number, required: true },
             totalResources: { type: Number, required: true },
 
-            summary: { type: String }, // ✅ ADDED SUMMARY FIELD
+            summary: { type: String, default: "-" }, // ✅ ADDED SUMMARY FIELD
 
             tasks: [
                 {
