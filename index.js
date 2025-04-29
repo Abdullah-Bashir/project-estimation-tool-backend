@@ -25,18 +25,26 @@ app.use(
 );
 
 // CORS
+// app.use(
+//   cors({
+//     origin: (origin, callback) => {
+//       if (!origin) return callback(null, true);
+//       const normalized = origin.replace(/\/$/, "");
+//       const allowed = (process.env.FRONTEND_URL || "http://localhost:3000").replace(/\/$/, "");
+//       if (normalized === allowed) return callback(null, true);
+//       console.error(`CORS blocked: ${normalized}`);
+//       callback(new Error("Not allowed by CORS"));
+//     },
+//     credentials: true,
+//   })
+// );
+
 app.use(
-  cors({
-    origin: (origin, callback) => {
-      if (!origin) return callback(null, true);
-      const normalized = origin.replace(/\/$/, "");
-      const allowed = (process.env.FRONTEND_URL || "http://localhost:3000").replace(/\/$/, "");
-      if (normalized === allowed) return callback(null, true);
-      console.error(`CORS blocked: ${normalized}`);
-      callback(new Error("Not allowed by CORS"));
-    },
-    credentials: true,
-  })
+    cors({
+      origin: ["https://project-management-tool-neon.vercel.app", "http://localhost:3000"],
+      methods: ["GET","POST","OPTIONS"],
+      allowedHeaders: ["Content-Type","Authorization"],
+    })
 );
 
 // Standard middleware
