@@ -42,7 +42,7 @@ app.use(
 app.use(
     cors({
       origin: ["https://project-management-tool-neon.vercel.app", "http://localhost:3000"],
-      methods: ["GET","POST","OPTIONS"],
+      methods: ["GET","POST","OPTIONS", "PUT"],
       allowedHeaders: ["Content-Type","Authorization"],
     })
 );
