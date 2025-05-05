@@ -7,7 +7,8 @@ const projectDetailSchema = new mongoose.Schema(
         title: { type: String, required: true }, // e.g. "Tekken 7"
 
         reports: {
-            email: { type: String, required: true },
+
+            email: { type: String, default: "N/A" },
             capability: { type: String, default: "Maintain (Keep lights on)" },
             methodology: { type: String, default: "Agile" },
             pillar: { type: String, default: "Organizational & Staff" },
