@@ -39,10 +39,20 @@ app.use(
 //   })
 // );
 
+// app.use(
+//   cors({
+//     origin: ["https://project-estimation-tool-frontend-jm1n.vercel.app/", "http://localhost:3000"],
+//     methods: ["GET", "POST", "OPTIONS", "PUT", "DELETE"],
+//     allowedHeaders: ["Content-Type", "Authorization"],
+//   })
+// );
+
+
 app.use(
   cors({
-    origin: ["https://project-estimation-tool-frontend-jm1n.vercel.app/", "http://localhost:3000"],
-    methods: ["GET", "POST", "OPTIONS", "PUT", "DELETE", "DELETE"],
+    origin: ["https://project-estimation-tool-frontend-jm1n.vercel.app", "http://localhost:3000"],
+    methods: ["GET", "POST", "OPTIONS", "PUT"],
+    methods: ["GET", "POST", "OPTIONS", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
