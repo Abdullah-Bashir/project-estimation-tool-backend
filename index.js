@@ -40,11 +40,11 @@ app.use(
 // );
 
 app.use(
-    cors({
-      origin: ["https://project-management-tool-neon.vercel.app", "http://localhost:3000"],
-      methods: ["GET","POST","OPTIONS"],
-      allowedHeaders: ["Content-Type","Authorization"],
-    })
+  cors({
+    origin: ["https://project-estimation-tool-frontend-jm1n.vercel.app/", "http://localhost:3000"],
+    methods: ["GET", "POST", "OPTIONS", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
 );
 
 // Standard middleware
