@@ -42,7 +42,7 @@ app.use(
 app.use(
   cors({
     origin: ["https://project-estimation-tool-frontend-jm1n.vercel.app/", "http://localhost:3000"],
-    methods: ["GET", "POST", "OPTIONS", "DELETE"],
+    methods: ["GET", "POST", "OPTIONS", "PUT", "DELETE", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
