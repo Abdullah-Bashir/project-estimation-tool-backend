@@ -50,7 +50,7 @@ app.use(
 
 app.use(
   cors({
-    origin: ["https://project-estimation-tool-frontend.vercel.app/", "http://localhost:3000"],
+    origin: ["https://project-estimation-tool-frontend.vercel.app", "http://localhost:3000"],
     methods: ["GET", "POST", "OPTIONS", "PUT"],
     methods: ["GET", "POST", "OPTIONS", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
