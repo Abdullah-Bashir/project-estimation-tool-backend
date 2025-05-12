@@ -12,10 +12,10 @@ const projectDetailSchema = new mongoose.Schema(
             capability: { type: String, default: "Maintain (Keep lights on)" },
             methodology: { type: String, default: "Agile" },
             pillar: { type: String, default: "Organizational & Staff" },
-            rockSize: { type: String, required: true },
-            useCase: { type: String, required: true },
-            totalHours: { type: Number, required: true },
-            totalResources: { type: Number, required: true },
+            rockSize: { type: String },
+            useCase: { type: String },
+            totalHours: { type: Number },
+            totalResources: { type: Number },
 
             summary: { type: String, default: "-" }, // ✅ ADDED SUMMARY FIELD
 
